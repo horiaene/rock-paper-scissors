@@ -49,6 +49,13 @@ function game() { //one game of five rounds
 
     }
 }
+    if (playerScore > computerScore) {
+        alert(`Player wins!`)
+    }  else if (playerScore === computerScore) {
+        alert(`It's a tie!`)
+    }  else if (playerScore < computerScore) {
+        alert(`Computer wins! Skynet is boss`)
+    }
     let score = `Player score: ${playerScore}, computer score: ${computerScore}.`;
     return score;
 }   
