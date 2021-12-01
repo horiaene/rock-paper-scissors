@@ -35,18 +35,18 @@ function game() { //one game of five rounds
     let computerScore = 0;
     //repeat function - WIP
         for (let i = 0; i < 5; i++) { //repeat following code 5 times
-            let playerSelection = prompt("What is your selection?"); //check user choice
+            let playerSelection = prompt("Rock, paper, scissors? What do you choose?"); //check user choice
             let computerSelection = computerPlay(); //check computer choice
             let roundResult = playRound(playerSelection, computerSelection); //get the result of one round
                 if (roundResult === ("You win!")) { //add one point to user if user wins
                     playerScore = playerScore + 1;
-                    alert(`Player score: ${playerScore}, computer score: ${computerScore}.`)
+                    alert(`Player wins! Player score: ${playerScore}, computer score: ${computerScore}.`)
                 } else if (roundResult === ("You lose!")) { //add one point to CPU if CPU wins
                     computerScore = computerScore +  1;
-                    alert(`Player score: ${playerScore}, computer score: ${computerScore}.`)
+                    alert(`Computer wins! Player score: ${playerScore}, computer score: ${computerScore}.`)
                 } else if (roundResult === ("Tie!")) { //add one point to CPU if CPU wins
                     computerScore = computerScore +  1;
-                    alert(`Player score: ${playerScore}, computer score: ${computerScore}.`)
+                    alert(`It's a tie! Player score: ${playerScore}, computer score: ${computerScore}.`)
 
     }
 }
