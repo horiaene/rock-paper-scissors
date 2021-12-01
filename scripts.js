@@ -56,5 +56,13 @@ function game() { //one game of five rounds
     }
     let score = `Player score: ${playerScore}, computer score: ${computerScore}.`;
     return score;
-}   
+
+}
+
 console.log(game());
+let askRestart = prompt(`Play again?`);
+if (askRestart.toUpperCase() === "YES" ) {
+    game();
+} else {
+    alert(`Please come again!`)
+}
