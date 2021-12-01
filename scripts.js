@@ -45,7 +45,6 @@ function game() { //one game of five rounds
                     computerScore = computerScore +  1;
                     alert(`Computer wins! Player score: ${playerScore}, computer score: ${computerScore}.`)
                 } else if (roundResult === ("Tie!")) { //add one point to CPU if CPU wins
-                    computerScore = computerScore +  1;
                     alert(`It's a tie! Player score: ${playerScore}, computer score: ${computerScore}.`)
 
     }
